@@ -1,10 +1,13 @@
 pipeline {
     agent any
+    tools {
+        maven 'Maven3'  // Ensure this matches the label you configured for Maven in Jenkins
+    }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Islake/TemperatureConverter.git'
+                git branch: 'master', url: 'https://github.com/Islake/TemperatureConverter.git'
             }
         }
 
