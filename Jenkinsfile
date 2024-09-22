@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/ADirin/exercise1.git'
+                git 'https://github.com/Islake/TemperatureConverter.git'
             }
         }
 
