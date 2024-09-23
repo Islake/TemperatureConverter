@@ -34,4 +34,7 @@ public class TemperatureConverter {
     public static float kelvinToCel(float kel){
         return (float) (kel - 273.15);
     }
+    public static void main(String[] args){
+        System.out.println("Done docker");
+    }
 }
